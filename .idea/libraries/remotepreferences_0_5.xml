@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="remotepreferences-0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/8d7ef8af2ed68a8bcd41cbe50219ee12851b0f44/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/8d7ef8af2ed68a8bcd41cbe50219ee12851b0f44/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crossbowffs.remotepreferences/remotepreferences/0.5/e4e73a7a33dd95762cf88c6fea2aeea6f716c8e1/remotepreferences-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

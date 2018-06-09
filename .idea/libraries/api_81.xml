@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="api-81">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.robv.android.xposed/api/81/45c39d9d62286b288d1220d4d6d5a5291580ea3a/api-81.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.robv.android.xposed/api/81/a273c622e7a1cb42ba828ebaedd1b372788da01a/api-81-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
