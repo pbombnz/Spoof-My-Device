@@ -4,7 +4,10 @@
 https://play.google.com/store/apps/details?id=nz.pbomb.xposed.spoofmydevice
 
 ## Why does this have low ratings?
-This application requires a certain level of technical expertise to use. A lot of people get their devices bricked or bootlooped by my application because they try to spoof all applications including system applications (which is not recommended!). This will make the device a bit confused when booting and hence not boot. My application tries to block users from spoofing these system applications, but due to the variation of ROMs available, each ROM has different system applications, making it impossible for me to block all system applications that exist in the Android ecosystem. 
+This application, like any other root/xposed application, requires a certain level of technical expertise to use to avoid risk towards your device. 
+
+A lot of people get their devices bricked or bootlooped by my application because they try to spoof all applications including system applications (which is not recommended!). This will make the device a bit confused when booting and hence not boot. My application tries to block users from spoofing these system applications, but due to the variation of ROMs available, each ROM has different system applications, making it impossible for me to block all system applications that exist in the Android ecosystem. 
+
 
 ## Status 
 ### Inactive
