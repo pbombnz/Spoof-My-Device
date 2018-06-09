@@ -20,9 +20,13 @@ Secondly, this application has a few bugs. Some are GUI bugs and can easily be f
 
 ### To-do List
 → More fields to override
+
 → Emulation Checks Override
+
 → 'System.hasFeature' Override
+
 → GUI Improvements and Bug Fixes    
+
 → Make Flash Zip that deletes application?
 
 ## Description
