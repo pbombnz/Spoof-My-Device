@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8sp"
+            android:paddingBottom="8sp"
+            android:paddingLeft="8sp"
+            android:paddingRight="8sp"
+            android:layout_marginLeft="4sp"
+            android:text="Device Template"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/ndf_textView"
+            android:layout_width="match_parent"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/gray_light"
+            android:text="No devices found."
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/spoofDevices_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView android:id="@+id/refresh_button_textView"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:paddingTop="16sp"
+                android:paddingBottom="16sp"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Refresh"
+                android:textColor="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView android:id="@+id/ok_button_textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:paddingTop="16sp"
+                android:paddingBottom="16sp"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="Cancel"
+                android:textColor="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

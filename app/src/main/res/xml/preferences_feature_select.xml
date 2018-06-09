@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/FeatureSelectActivity_PreferenceFragement_PreferenceCategory1_title">
+        <CheckBoxPreference
+            android:key="feature_debug_developerSettingsEnabled"
+            android:title="Development Settings"
+            android:summary="Enabling this, tells the application that Developer Settings were never activated."/>
+        <CheckBoxPreference
+            android:key="feature_debug_adbEnabled"
+            android:title="ADB"
+            android:summary="Enabling this, tells the application that Developer Settings were never activated."/>
+        <CheckBoxPreference
+            android:key="feature_debug_allowFinishActivities"
+            android:title="Always Finish Activities"
+            android:summary="Enabling this, tells the application that Developer Settings were never activated."/>
+        <CheckBoxPreference
+            android:key="feature_debug_allowMockLocations"
+            android:title="Allow Mock Locations"
+            android:summary="Enabling this, tells the application that Developer Settings were never activated."/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,138 @@
+<resources>
+    <!-- Application Name -->
+    <string name="app_name">Spoof My Device</string>
+
+    <!-- Activity Titles -->
+    <string name="AppSelectActivity_title">Application Select</string>
+    <string name="DeviceSelectActivity_title">Device Select</string>
+    <string name="ContactActivity_title">Contact Me</string>
+    <string name="AboutActivity_title">About</string>
+    <string name="BuildTestActivity_title">Device Spoofing Test</string>
+
+    <!-- MainActivity's Menu -->
+    <string name="MainActivity_menu_donate">Donate</string>
+    <string name="MainActivity_menu_contact_me">Contact Me</string>
+    <string name="MainActivity_menu_xda">XDA Thread</string>
+    <string name="MainActivity_menu_about">About</string>
+
+    <!-- MainActivity's Preference Fragement Fields -->
+    <string name="MainActivity_PrefFragement_PreferenceCategory1_title">Settings</string>
+
+    <string name="MainActivity_PrefFragement_devicePickPref_title">Spoofing Device Select</string>
+    <string name="MainActivity_PrefFragement_devicePickPref_summary">Select a device used for spoofing your current device information.</string>
+    <string name="MainActivity_PrefFragement_extraSelectPref_title">Extras Select</string>
+    <string name="MainActivity_PrefFragement_extraSelectPref_summary">Toggle additional features to enhance the spoofing experience.</string>
+
+    <string name="MainActivity_PrefFragement_applicationPref_title">Application Select</string>
+    <string name="MainActivity_PrefFragement_applicationPref_summary">Pick which specific applications you would like to have device spoofing enabled for.</string>
+    <string name="MainActivity_PrefFragement_testPref_title">Testing</string>
+    <string name="MainActivity_PrefFragement_testPref_summary">Used to check whether device spoofing functioning correctly or not.</string>
+
+    <string name="ContactActivity_button_email">E-Mail</string>
+    <string name="ContactActivity_button_xda">XDA Thread</string>
+    <string name="ContactActivity_button_twitter">Twitter</string>
+    <string name="ContactActivity_textView_main">You can contact me using any of the methods below where you can send me feedback, bug reports, feature requests or to simply follow me on social media for updates.\n\nRemember to actually write an actual message when contacting me! You\'d be surprised how many people emailed me with no message.</string>
+
+    <string name="AboutActivity_author_title">Author</string>
+    <string name="AboutActivity_author_1"><a href="https://github.com/PBombNZ">Prashant B. (PBombNZ)</a></string>
+
+    <string name="AboutActivity_contributer_title">Libraries Used</string>
+    <string name="AboutActivity_contributer_text_1">rovo89 - <a href="https://github.com/rovo89/">Xposed Bridge Framework</a></string>
+    <string name="AboutActivity_contributer_text_2">Jake Wharton - <a href="https://github.com/JakeWharton/butterknife">ButterKnife</a></string>
+    <string name="AboutActivity_contributer_text_3">Dmytro Tarianyk - <a href="https://github.com/Clans/FloatingActionButton">FloatingActionButton</a></string>
+    <string name="AboutActivity_contributer_text_4">CymChad - <a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">BaseRecyclerViewAdapterHelper</a>\n(No Longer Used)</string>
+    <string name="AboutActivity_contributer_text_5">Andrew Sun - <a href="https://github.com/apsun/RemotePreferences">RemotePreferences</a></string>
+
+    <string name="AboutActivity_LicenseAndCP_title">Copyright</string>
+    <string name="AboutActivity_LicenseAndCP_text">Copyright 2016 Prashant B.\n&lt;pbomb.nz@gmail.com&gt;</string>
+
+    <string name="AboutActivity_disclaimer_title">Disclaimer</string>
+    <string name="AboutActivity_disclaimer_message">The author and contributors of Spoof My Device
+        take no responsibility for any loss of data or damage to your device or any other
+        consequences that arise as a result of using this application.
+        \n\n
+        USE AT YOUR OWN RISK.
+    </string>
+
+    <string name="AppSelectActivity_alertDialog_spoofAllWarning_title">Warning</string>
+    <string name="AppSelectActivity_alertDialog_spoofAllWarning_message">
+        It is not recommended to spoof all applications as this will most likely result in bootloops or fatal system errors.\n
+        \n
+        We recommended only spoofing the applications you need spoofing enabled for, and leaving all other applications unspoofed.
+        \n
+        Would you like to continue anyway knowing the risks involved?
+    </string>
+
+    <string name="BuildTestActivity_textView_main">Below shows how apps will see your device
+        and indicates whether or not device spoofing is working correctly.
+    </string>
+    <string name="BuildTestActivity_textView_main_2">WARNING: If you have just recently added/removed
+        this application (or any other application), make sure you completely close this
+        application from the recent apps list and then re-open it for changes to be in effect.
+        Some other applications might require clearing app data and cache and force closing depending
+        on how they operate.
+    </string>
+
+    <!-- Global Strings -->
+    <string name="arch_32__armeabi">armeabi</string>
+    <string name="arch_32__armeabi_v7a">armeabi-v7a</string>
+    <string name="arch_64__arm64_v8a">arm64-v8a</string>
+    <string name="arch_32__x86">x86</string>
+    <string name="arch_64__x86_64">x86_64</string>
+    <string name="arch_32__mips">mips</string>
+    <string name="arch_64__mips64">mips64</string>
+
+    <string name="label_build">Build</string>
+    <string name="label_build_board">Board:</string>
+    <string name="label_build_id">ID:</string>
+    <string name="label_build_display">Display:</string>
+    <string name="label_build_product">Product:</string>
+    <string name="label_build_device">Device:</string>
+    <string name="label_build_cpuAbi">CPU ABI:</string>
+    <string name="label_build_cpuAbi2">CPU ABI2:</string>
+    <string name="label_build_manufacturer">Manufacturer:</string>
+    <string name="label_build_brand">Brand:</string>
+    <string name="label_build_model">Model:</string>
+    <string name="label_build_bootloader">Bootloader:</string>
+    <string name="label_build_radio">Radio:</string>
+    <string name="label_build_hardware">Hardware:</string>
+    <string name="label_build_serial">Serial:</string>
+    <string name="label_build_supportedAbis">Supported ABIs:</string>
+    <string name="label_build_supportedAbis32">Supported ABIs (32-bit):</string>
+    <string name="label_build_supportedAbis64">Supported ABIs (64-bit):</string>
+    <string name="label_build_type">Type:</string>
+    <string name="label_build_tags">Tags:</string>
+    <string name="label_build_fingerprint">Fingerprint:</string>
+    <string name="label_build_version">Version</string>
+    <string name="label_build_version_incremental">Incremental:</string>
+    <string name="label_build_version_release">Release:</string>
+    <string name="label_build_version_sdk">SDK:</string>
+    <string name="label_build_version_sdkint">SDK_INT:</string>
+    <string name="label_build_version_codename">Codename:</string>
+
+    <!-- Provider Strings -->
+    <string name="PreferenceProvider_authority">nz.pbomb.xposed.spoofmydevice.provider.preferences</string>
+    <string name="FeatureSelectActivity_title">Feature Selection</string>
+    <string name="FeatureSelectActivity_PreferenceFragement_PreferenceCategory1_title">Debug</string>
+
+
+    <!-- Google AdMob Strings -->
+    <string name="admob_app_id">ca-app-pub-6535844057223880~9027192454</string>
+    <string name="admob_ad_unit_id__MainActivity_Interstitial">ca-app-pub-6535844057223880/3347132851</string>
+    <string name="admob_ad_unit_id__MainActivity_Banner">ca-app-pub-6535844057223880/6160998450</string>
+    <string name="admob_ad_unit_id_AppSelectActivity_Native">ca-app-pub-6535844057223880/9753593259</string>
+
+    <string name="admob_ad_unit_id_TestBanner">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <!-- Alert Dialogs -->
+    <string name="AlertDialog_Yes">Yes</string>
+    <string name="AlertDialog_No">No</string>
+    <string name="AlertDialog_Cancel">Cancel</string>
+    <string name="AlertDialog_Okay">Okay</string>
+    <string name="AlertDialog_OK">OK</string>
+
+    <string name="MainActivity_AlertDialog_ModuleActivition_title">Module Activation</string>
+    <string name="MainActivity_AlertDialog_ModuleActivition_message">You need to activate the module first (and reboot) before configuring the module\'s settings.</string>
+
+</resources>

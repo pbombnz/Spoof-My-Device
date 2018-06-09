@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "592119863061",
+    "firebase_url": "https://spoof-my-device-33474.firebaseio.com",
+    "project_id": "spoof-my-device-33474",
+    "storage_bucket": "spoof-my-device-33474.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592119863061:android:e0bdfb4626c5ddda",
+        "android_client_info": {
+          "package_name": "nz.pbomb.xposed.spoofmydevice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592119863061-5sbkhkis72j0o902qe6s3j4p9e57kq2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nz.pbomb.xposed.spoofmydevice",
+            "certificate_hash": "98412231F2A90F77884C197ABB1EA79CA655AA54"
+          }
+        },
+        {
+          "client_id": "592119863061-nuvurgjvk16gmhnamhom7lon52mb3td8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nz.pbomb.xposed.spoofmydevice",
+            "certificate_hash": "D2EE47FD66E9C65A234878B1003B9758A6453E2C"
+          }
+        },
+        {
+          "client_id": "592119863061-5lj3e2uro656cbonh8lsnom92ocogokc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWDRnNXvBQHCi47LjRfUqisVpCILzR-pU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592119863061-5lj3e2uro656cbonh8lsnom92ocogokc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2sp"
+    android:paddingBottom="2sp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_marginBottom="4sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp"
+            app:cardElevation="3sp"
+            app:cardCornerRadius="1dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/device_name_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8sp"
+                            android:paddingBottom="8sp"
+                            android:paddingLeft="8sp"
+                            android:paddingRight="8sp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Huawei P8 (5.0)" />
+                </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+</RelativeLayout>

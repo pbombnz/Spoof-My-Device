@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:text="@string/AboutActivity_author_title"
+                android:layout_gravity="center_horizontal" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:layout_marginTop="16sp"
+                android:src="@drawable/pbomb_banner"
+                android:contentDescription="Application Logo"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/activity_about_textView_author_1"
+                android:text="@string/AboutActivity_author_1"
+                android:padding="3sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:text="@string/AboutActivity_contributer_title"
+                android:padding="5sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/activity_about_textView_contributer_text_1"
+                android:text="@string/AboutActivity_contributer_text_1"
+                android:paddingTop="3sp"
+                android:paddingBottom="3sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/activity_about_textView_contributer_text_2"
+                android:text="@string/AboutActivity_contributer_text_2"
+                android:paddingTop="3sp"
+                android:paddingBottom="3sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/activity_about_textView_contributer_text_3"
+                android:text="@string/AboutActivity_contributer_text_3"
+                android:paddingTop="3sp"
+                android:paddingBottom="3sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/activity_about_textView_contributer_text_4"
+                android:text="@string/AboutActivity_contributer_text_4"
+                android:paddingTop="3sp"
+                android:paddingBottom="3sp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/activity_about_textView_contributer_text_5"
+                android:text="@string/AboutActivity_contributer_text_5"
+                android:paddingTop="3sp"
+                android:paddingBottom="3sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/AboutActivity_LicenseAndCP_title"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:autoLink="email"
+                android:text="@string/AboutActivity_LicenseAndCP_text"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/AboutActivity_disclaimer_title"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/AboutActivity_disclaimer_message"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

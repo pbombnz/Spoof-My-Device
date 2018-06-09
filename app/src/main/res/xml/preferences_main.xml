@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/MainActivity_PrefFragement_PreferenceCategory1_title">
+        <Preference
+            android:key="deviceSelectPref"
+            android:title="@string/MainActivity_PrefFragement_devicePickPref_title"
+            android:summary="@string/MainActivity_PrefFragement_devicePickPref_summary"
+            />
+        <!--Preference
+            android:key="extraSelectPref"
+            android:title="@string/MainActivity_PrefFragement_extraSelectPref_title"
+            android:summary="@string/MainActivity_PrefFragement_extraSelectPref_summary"
+            /-->
+        <Preference
+            android:key="appSelectPref"
+            android:title="@string/MainActivity_PrefFragement_applicationPref_title"
+            android:summary="@string/MainActivity_PrefFragement_applicationPref_summary"
+            />
+    </PreferenceCategory>
+    <!--PreferenceCategory android:title="@string/MainActivity_PrefFragement_PreferenceCategory2_title">
+        <Preference
+            android:key="testPref"
+            android:title="@string/MainActivity_PrefFragement_testPref_title"
+            android:summary="@string/MainActivity_PrefFragement_testPref_summary"
+            />
+    </PreferenceCategory-->
+</PreferenceScreen>

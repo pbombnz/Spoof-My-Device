@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DeviceSelectActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build"
+                    android:padding="4sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_board"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/board_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_id"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/id_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_display"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/display_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_product"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/product_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_device"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/device_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_cpuAbi"
+                    android:id="@+id/activity_device_select_textview_cpuAbiLabel"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <RadioGroup
+                    android:id="@+id/cpuAbi_radioGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:padding="8sp"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arch_64__arm64_v8a" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arch_32__armeabi_v7a" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arch_32__armeabi" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arch_32__x86" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arch_64__x86_64" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arch_32__mips" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arch_64__mips64" />
+                </RadioGroup>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_cpuAbi2"
+                    android:id="@+id/activity_device_select_textview_cpuAbi2Label"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <RadioGroup
+                    android:id="@+id/cpuAbi2_radioGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:padding="8sp"
+                    android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_64__arm64_v8a"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_32__armeabi_v7a"
+                            />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_32__armeabi"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_32__x86"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_64__x86_64"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_32__mips"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_64__mips64"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            />
+                </RadioGroup>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_manufacturer"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/manufacturer_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_brand"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:id="@+id/brand_editText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_model"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:id="@+id/model_editText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_bootloader"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/bootloader_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_radio"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/radio_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_hardware"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/hardware_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_serial"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/serial_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <!--TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_supportedAbis"
+                    android:id="@+id/activity_device_select_textview_supportedAbisLabel"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="italic"
+                    android:text="**Auto-generated based on 32-Bit and 64-bit selection below**"
+                    android:padding="8sp" />
+            </TableRow-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_supportedAbis32"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_32__armeabi_v7a"
+                            android:id="@+id/supportedAbis32bit__armeabi_v7a_checkBox" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_32__armeabi"
+                            android:id="@+id/supportedAbis32bit__armeabi_checkBox" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/arch_32__x86"
+                            android:id="@+id/supportedAbis32bit__x86_checkBox" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/arch_32__mips"
+                            android:id="@+id/supportedAbis32bit__mips_checkBox" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_supportedAbis64"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_64__arm64_v8a"
+                            android:id="@+id/supportedAbis64bit__arm64_v8a_checkBox" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_64__x86_64"
+                            android:id="@+id/supportedAbis64bit__x86_64_checkBox" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arch_64__mips64"
+                            android:id="@+id/supportedAbis64bit__mips64_checkBox" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_type"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp"
+                    tools:ignore="TooManyViews" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/type_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_tags"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/tags_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_fingerprint"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/fingerprint_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_version"
+                    android:padding="4sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_version_incremental"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/version_incremental_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_version_release"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/version_release_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_version_sdk"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/version_sdk_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine|number" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_version_sdkint"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/version_sdkint_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine|number" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_build_version_codename"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="8sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/version_codename_editText"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/acitivity_device_select_fab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|right"
+            android:paddingLeft="0sp"
+            android:paddingRight="16sp"
+            android:paddingBottom="16sp"
+            android:src="@drawable/fab_add"
+            fab:menu_backgroundColor="#ccffffff"
+            fab:menu_labels_colorNormal="@color/gray"
+            fab:menu_colorNormal="@color/colorAccent"
+            fab:menu_colorPressed="@color/colorAccent">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_android_white_24dp"
+                fab:fab_size="mini"
+                fab:fab_label="Choose Device Template"
+                android:id="@+id/acitivity_device_select_fab_templatechooser"
+                style="@style/MenuButtonsSmall"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_android_white_24dp"
+                fab:fab_size="mini"
+                android:id="@+id/acitivity_device_select_fab_default"
+                fab:fab_label="Default Settings"
+                style="@style/MenuButtonsSmall"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_sweep_white_24dp"
+                fab:fab_size="mini"
+                android:id="@+id/acitivity_device_select_fab_clearall"
+                fab:fab_label="Clear All Fields"
+                style="@style/MenuButtonsSmall"/>
+        </com.github.clans.fab.FloatingActionMenu>
+    </FrameLayout>
+</RelativeLayout>

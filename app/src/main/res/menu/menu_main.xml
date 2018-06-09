@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_main_donate"
+        android:title="@string/MainActivity_menu_donate"
+        android:enabled="false"/>
+    <item android:id="@+id/menu_main_contact_me"
+        android:title="@string/MainActivity_menu_contact_me" />
+    <item android:id="@+id/menu_main_xda"
+        android:title="@string/MainActivity_menu_xda"
+        android:enabled="false"/>
+    <item android:id="@+id/menu_main_about"
+        android:title="@string/MainActivity_menu_about" />
+</menu>
