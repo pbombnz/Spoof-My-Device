@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "nz.pbomb.xposed.spoofmydevice"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 5
         versionName "2.0.2"
         multiDexEnabled true
@@ -35,32 +37,37 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 
     // ButterKnife Annotations
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    
+    //implementation 'com.jakewharton:butterknife:8.8.1'
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:9.0.0-SNAPSHOT'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-SNAPSHOT'
+
     // Other Libraries
     //compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.8.5'
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.github.clans:fab:1.6.4'
-    implementation 'com.crossbowffs.remotepreferences:remotepreferences:0.5'
+    implementation 'com.crossbowffs.remotepreferences:remotepreferences:0.6'
     
     // Ads
     // InMobi Ads
     //compile 'com.inmobi.monetization:inmobi-ads:6.0.0'
     // Google AdMob
-    
+
     // Google Play Services and Firebase
-    implementation 'com.google.firebase:firebase-crash:16.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-ads:15.0.1'
     implementation 'com.google.android.gms:play-services-ads:15.0.1'
 
     // Android Support Libraries
-    implementation 'com.android.support:multidex:1.0.3'
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:cardview-v7:26.1.0'
-    implementation 'com.android.support:recyclerview-v7:26.1.0'
-    implementation 'com.android.support:design:26.1.0'
+    //implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
 
     // JUnit testing
     testImplementation 'junit:junit:4.12'
 }
+
+apply plugin: 'com.google.gms.google-services'
